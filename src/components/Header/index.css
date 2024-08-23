@@ -1,0 +1,21 @@
+
+.link-item {
+    text-decoration: none;
+  }
+
+  .nav-header {
+    width: 100%;
+  }
+
+  .nav-content {
+    display: flex;
+    justify-content: space-around;
+    background-color: #272727;
+    padding: 15px;
+    align-items: center;
+    height: 50px;
+  }
+
+  .route {
+    color: violet;
+  }

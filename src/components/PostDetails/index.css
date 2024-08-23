@@ -1,0 +1,12 @@
+
+
+.post-details-page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.btn-section {
+    display: flex;
+    justify-content: center;
+}
