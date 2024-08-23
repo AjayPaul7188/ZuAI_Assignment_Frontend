@@ -14,7 +14,7 @@ function PostForm() {
     if (id) {
       // Editing an existing post
       setIsEdit(true);
-      fetch(`http://localhost:3001/posts/${id}`)
+      fetch(`https://zuai-assignment-backend-1.onrender.com/posts/${id}`)
         .then(response => response.json())
         .then(data => {
           setTitle(data.data.title);
@@ -32,7 +32,7 @@ function PostForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const url = isEdit ? `http://localhost:3001/posts/${id}` : 'http://localhost:3001/posts';
+    const url = isEdit ? `https://zuai-assignment-backend-1.onrender.com/posts/${id}` : 'https://zuai-assignment-backend-1.onrender.com/posts';
     const method = isEdit ? 'PUT' : 'POST';
 
     fetch(url, {

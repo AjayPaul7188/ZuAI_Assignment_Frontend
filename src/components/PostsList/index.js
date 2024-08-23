@@ -11,7 +11,7 @@ class PostList extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3001/posts')
+        fetch('https://zuai-assignment-backend-1.onrender.com/posts')
             .then(response => response.json())
             .then(data => this.setState({ posts: data.data }))
             .catch(error => console.error('Error:', error));

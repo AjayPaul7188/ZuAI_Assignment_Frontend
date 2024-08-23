@@ -11,7 +11,7 @@ function PostDetails() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3001/posts/${id}`)
+    fetch(`https://zuai-assignment-backend-1.onrender.com/posts/${id}`)
       .then(response => response.json())
       .then(data => {
         setPost(data);
@@ -32,7 +32,7 @@ function PostDetails() {
   };
 
   const handleDelete = () => {
-    fetch(`http://localhost:3001/posts/${id}`, {
+    fetch(`https://zuai-assignment-backend-1.onrender.com/posts/${id}`, {
       method: 'DELETE',
     })
       .then(response => {
